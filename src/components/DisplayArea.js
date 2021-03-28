@@ -1,11 +1,15 @@
 import React from "react";
 
-function DisplayArea({ employees }) {
+function DisplayArea({ employees, handleSort }) {
   return (
     <table>
       <thead>
         <tr>
-          <th>Name</th>
+            <th onClick={() => {
+                handleSort("name");
+            }}
+            >
+                Name</th>
           <th>Email</th>
           <th>Date of Birth</th>
           <th>Phone Number</th>
