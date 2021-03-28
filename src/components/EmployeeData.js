@@ -9,7 +9,7 @@ export default class EmployeeData extends Component {
         employees: [{}],
         filteredEmployees:[{}]
     }
-
+    // handle sort function to sort display of employees in ascending & descending order
     handleSort = tableLabel => {
         console.log(tableLabel)
         if(this.state.order === "descend"){
@@ -35,7 +35,7 @@ export default class EmployeeData extends Component {
         this.setState({filteredEmployees: sortedEmployees})
     };
 
-
+    // handle search function to search for employees
     handleSearch = e => {
         const filteredEmployeesList = this.state.employees.filter(employee => {
             let name = `${employee.name.title}${employee.name.first}${employee.name.last}`
@@ -53,7 +53,7 @@ export default class EmployeeData extends Component {
                 })
             })
     }
-
+    // render function to display the correct data
     render(){
         return (
             <>

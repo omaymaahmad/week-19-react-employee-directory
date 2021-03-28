@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/SearchBar.css";
 
+// search bar function
 function SearchBar({ handleSearch }) {
   return (
     <div className="searchbar">
