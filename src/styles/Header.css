@@ -1,6 +1,6 @@
 .header {
-    background-color: aqua;
+    background-color: rgb(193, 248, 138);
     width: 100%;
     text-align: center;
-    border-bottom: 3px solid blueviolet;
+    border-bottom: 3px solid rgb(201, 178, 248);
 }
