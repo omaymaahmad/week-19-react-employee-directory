@@ -1,4 +1,12 @@
 .tableColumns {
     width: 20%;
     text-align: center;
+    padding-top: 2.5%;
+
+}
+
+.tableData {
+    text-align: center;
+    width: auto;
+    padding-top: 2%;
 }

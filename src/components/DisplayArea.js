@@ -12,10 +12,10 @@ function DisplayArea({ employees, handleSort }) {
             }}
             >
                 Name</th>
-          <th>Email</th>
-          <th>Date of Birth</th>
-          <th>Phone Number</th>
-          <th>Image</th>
+          <th className="tableColumns">Email</th>
+          <th className="tableColumns">Date of Birth</th>
+          <th className="tableColumns">Phone Number</th>
+          <th className="tableColumns">Image</th>
         </tr>
       </thead>
       <tbody>
@@ -23,14 +23,14 @@ function DisplayArea({ employees, handleSort }) {
           employees.map((employees) => {
             return (
               <tr>
-                <td>
+                <td className="tableData">
                   {employees.name.title} {employees.name.first}{" "}
                   {employees.name.last}
                 </td>
-                <td>{employees.email}</td>
-                <td>{employees.dob.date.split("").slice(0, 10).join("")}</td>
-                <td>{employees.phone}</td>
-                <td>
+                <td className="tableData">{employees.email}</td>
+                <td className="tableData">{employees.dob.date.split("").slice(0, 10).join("")}</td>
+                <td className="tableData">{employees.phone}</td>
+                <td className="tableData">
                   <img src={employees.picture.thumbnail} alt="Profile" />
                 </td>
               </tr>
