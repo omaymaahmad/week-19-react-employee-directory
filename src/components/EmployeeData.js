@@ -12,7 +12,28 @@ export default class EmployeeData extends Component {
 
     handleSort = tableLabel => {
         console.log(tableLabel)
-    }
+        if(this.state.order === "descend"){
+            this.setState({
+                order: "ascend",
+            });
+        }else {
+            this.setState({
+                order: "descend",
+            });
+        }
+
+        const compareEmployees = (a, b) => {
+           
+            if(this.state.order === "ascend"){
+                return a[tableLabel].first.localeCompare(b[tableLabel].first);
+            } else {
+                return b[tableLabel].first.localeCompare(a[tableLabel].first);
+            }
+        };
+        
+        const sortedEmployees = this.state.filteredEmployees.sort(compareEmployees);
+        this.setState({filteredEmployees: sortedEmployees})
+    };
 
 
     handleSearch = e => {
