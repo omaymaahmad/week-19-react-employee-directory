@@ -11,7 +11,7 @@ export default class EmployeeData extends Component {
 
     componentDidMount(){
             API.getUsers().then((response) => {
-                console.log(response)
+                console.log(response.data.results)
                 this.setState({
                     employees: response.data.results,
                     filteredEmployees: response.data.results
@@ -22,7 +22,7 @@ export default class EmployeeData extends Component {
     render(){
         return (
             <>
-                <DisplayArea employees={this.state.filteredEmployees}/>
+                <DisplayArea employees={this.state.filteredEmployees} />
             </>
         )
     }
