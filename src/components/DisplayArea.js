@@ -5,7 +5,7 @@ function DisplayArea({ employees, handleSort }) {
   return (
     <table>
       <thead>
-        <tr>
+        <tr className="tableRow">
             <th className="tableColumns"
              onClick={() => {
                 handleSort("name");
