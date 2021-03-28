@@ -25,7 +25,7 @@
 
 * [GitHub repository](https://github.com/omaymaahmad/week-19-react-employee-directory) 
 
-* [Heroku Deployed Link](https://pw-budget-tracker.herokuapp.com/) 
+* [Deployed Link](https://omaymaahmad.github.io/week-19-react-employee-directory/) 
 
 * [My GitHub](https://github.com/omaymaahmad)  
 
@@ -35,4 +35,4 @@
 
 ## Screenshot of Application
 
-![Employee-Directory](./Assets/budget-tracker.png)
+![Employee-Directory](./Assets/employee-directory)
