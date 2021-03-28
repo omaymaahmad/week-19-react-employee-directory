@@ -35,4 +35,4 @@
 
 ## Screenshot of Application
 
-![Employee-Directory](./Assets/employee-directory)
+![Employee-Directory](./Assets/employee-directory.png)
